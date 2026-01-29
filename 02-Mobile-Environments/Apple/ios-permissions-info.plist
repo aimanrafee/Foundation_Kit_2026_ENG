@@ -1,1 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSCameraUsageDescription</key>
+    <string>This app requires access to the camera to capture photos for your profile.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>This app requires access to your photo library to upload existing images.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>This app requires permission to save photos to your library.</string>
 
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs your location to provide personalized local data while you are using the app.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>This app needs your location to provide background updates and local alerts.</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app requires microphone access for voice commands and audio recording.</string>
+    <key>NSAppleMusicUsageDescription</key>
+    <string>This app requires access to your media library to play your music files.</string>
+
+    <key>NSMotionUsageDescription</key>
+    <string>This app uses motion data to track your daily physical activity.</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>This app requires access to your health data to sync with your fitness goals.</string>
+
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>This app uses Bluetooth to connect with external Foundation Kit hardware.</string>
+    <key>NSFaceIDUsageDescription</key>
+    <string>This app uses Face ID to provide secure biometric authentication.</string>
+    <key>NSContactsUsageDescription</key>
+    <string>This app requires access to your contacts to help you connect with friends.</string>
+
+</dict>
+</plist>
