@@ -1,0 +1,33 @@
+/**
+ * @name: Master CSS Foundation
+ * @description: Core design system for consistent UI across all platforms.
+ * @version: 1.0.0 (2026)
+ */
+
+:root {
+    /* Color Palette */
+    --primary-color: #2563eb;    /* Royal Blue */
+    --secondary-color: #64748b;  /* Slate Gray */
+    --success-color: #22c55e;    /* Emerald Green */
+    --danger-color: #ef4444;     /* Red */
+    --background-light: #f8fafc; /* Light Grayish Blue */
+    --text-dark: #0f172a;        /* Deep Navy */
+
+    /* Typography */
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-code: 'Fira Code', 'Courier New', monospace;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    background-color: var(--background-light);
+    line-height: 1.6;
+}
+
+code {
+    font-family: var(--font-code);
+    background: #e2e8f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
