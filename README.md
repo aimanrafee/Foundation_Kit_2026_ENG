@@ -10,6 +10,7 @@ The ultimate master reference and foundational boilerplate for universal program
 Core blueprints for web development.
 * **Master Structure**: Standard HTML5 semantic layout.
 * **Master Styles**: Global CSS variables and design system.
+* **Master Logic**: Core JS utility functions with error handling and network diagnostic.
 
 ### 📱 [02-Mobile-Environments](./02-Mobile-Environments)
 Mobile configuration and hardware access standards.
@@ -22,6 +23,8 @@ System automation and diagnostic scripts.
 ### 📊 [04-Data-Structures](./04-Data-Structures)
 Universal data schemas for consistency.
 * **Standard User**: Master JSON profile for cross-platform integration.
+* **API Response Schema**: Standard template for server-to-client communication.
+* **Tech Glossary**: Professional English definitions for core technical terms.
 
 ---
 
@@ -33,8 +36,25 @@ To establish a high-discipline coding standard that remains stable, scalable, an
 | :--- | :--- |
 | **Markup** | HTML5 (W3C Living Standard) |
 | **Styling** | CSS3 (Modern Variables) |
+| **Logic** | Vanilla JavaScript (ES6+) |
 | **Data** | JSON (REST API Compatible) |
 | **License** | MIT License |
 
 ---
+
+## ⚡ Quick Start Guide (How to use this Kit)
+
+To maintain consistency in your future projects, follow these 3 steps:
+
+### 1. Initialize the Core
+Copy `01-Web-Standards/master-structure.html` as your base file. It is already pre-configured to link with `master-styles.css` and `master-logic.js`.
+
+### 2. Manage Data & State
+Use the `FoundationKit.storage.save('key', data)` function from `master-logic.js` to handle offline data persistence. Ensure your objects follow the structure defined in `04-Data-Structures/standard-user.json`.
+
+### 3. API Integration
+When connecting to a server, ensure the backend response aligns with `api-response-schema.json`. This allows the `FoundationKit.network.fetchData()` function to parse data safely.
+
+---
 *Maintained by Foundation Kit - Building the Future, One Line at a Time.*
+*Last Reviewed: January 2026 | Objective: Solid 2050 Stability.*
