@@ -11,6 +11,14 @@ Core blueprints for web development.
 * **Master Structure**: Standard HTML5 semantic layout.
 * **Master Styles**: Global CSS variables and design system.
 
+### 📱 [02-Mobile-Environments](./02-Mobile-Environments)
+Mobile configuration and hardware access standards.
+* **Android Manifest**: Standard XML for app permissions and core identity.
+
+### 🖥️ [03-Desktop-Systems](./03-Desktop-Systems)
+System automation and diagnostic scripts.
+* **Linux Basic Setup**: Bash script for environment initialization.
+
 ### 📊 [04-Data-Structures](./04-Data-Structures)
 Universal data schemas for consistency.
 * **Standard User**: Master JSON profile for cross-platform integration.
