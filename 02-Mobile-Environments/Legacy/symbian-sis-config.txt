@@ -1,1 +1,18 @@
+[FOUNDATION KIT - SYMBIAN OS LEGACY REFERENCE]
 
+1. FILE STRUCTURE (.SIS)
+- A Software Installation Script (SIS) defines how files are copied to the device.
+- Header: Contains App Name, UID (Unique Identifier), and Version.
+
+2. MANDATORY UID RANGE
+- Protected Range: 0x10000000 - 0x1FFFFFFF
+- User Range: 0x20000000 - 0x2FFFFFFF
+
+3. CORE DIRECTORIES
+- /sys/bin/ : Executable binaries
+- /resource/ : UI resource files (compiled .rss)
+- /private/[UID]/ : Application private data storage
+
+4. DEVELOPMENT NOTE (2026)
+- This file is for architectural reference only. 
+- Symbian used C++ with Cleanup Stack for memory management.
