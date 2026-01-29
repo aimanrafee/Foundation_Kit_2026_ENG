@@ -1,24 +1,44 @@
 /**
  * @name: Master JavaScript Logic
  * @description: Core utility functions for stable and clean application logic.
- * @version: 1.0.0 (2026)
+ * @version: 1.1.0 (2026 Upgrade)
+ * @concept: Modular & Platform Agnostic
  */
 
 const FoundationKit = {
     
-    // 1. Local Storage Management (Standard Offline logic)
+    // 1. Storage Management (Critical for Offline-First Apps)
     storage: {
         save: (key, value) => {
-            localStorage.setItem(key, JSON.stringify(value));
-            console.log(`[Foundation] Data saved: ${key}`);
+            try {
+                localStorage.setItem(key, JSON.stringify(value));
+                console.log(`[Foundation] Success: Data saved to ${key}`);
+            } catch (e) {
+                console.error("[Foundation] Error saving data", e);
+            }
         },
         load: (key) => {
             const data = localStorage.getItem(key);
             return data ? JSON.parse(data) : null;
+        },
+        clear: (key) => localStorage.removeItem(key)
+    },
+
+    // 2. Network & API Utilities
+    network: {
+        isOnline: () => navigator.onLine,
+        fetchData: async (url) => {
+            try {
+                const response = await fetch(url);
+                return await response.json();
+            } catch (e) {
+                console.error("[Foundation] Fetch error", e);
+                return null;
+            }
         }
     },
 
-    // 2. Simple UI Feedback
+    // 3. UI Helpers
     ui: {
         updateStatus: (elementId, message, isSuccess = true) => {
             const el = document.getElementById(elementId);
@@ -26,14 +46,21 @@ const FoundationKit = {
                 el.innerText = message;
                 el.style.color = isSuccess ? 'var(--success-color)' : 'var(--danger-color)';
             }
+        },
+        toggleElement: (id, isVisible) => {
+            const el = document.getElementById(id);
+            if (el) el.style.display = isVisible ? 'block' : 'none';
         }
     },
 
-    // 3. Initialization Logic
+    // 4. Initialization Logic
     init: () => {
         console.log("Foundation Kit: System Initialized.");
+        console.log(`Connection Status: ${navigator.onLine ? "ONLINE" : "OFFLINE"}`);
     }
 };
 
-// Export for usage
-FoundationKit.init();
+// Auto-run initialization when page is ready
+document.addEventListener('DOMContentLoaded', () => {
+    FoundationKit.init();
+});
