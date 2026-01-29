@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "name": "Standard User Profile Schema",
+    "description": "Master data structure for user information across all platforms.",
+    "version": "1.0.0",
+    "last_updated": "2026-01-30"
+  },
+  "user_profile": {
+    "account_info": {
+      "user_id": "UUID-12345",
+      "username": "foundation_user",
+      "email": "user@example.com",
+      "role": "admin"
+    },
+    "personal_details": {
+      "full_name": "Aiman Rafiee",
+      "date_of_birth": "1995-08-15",
+      "nationality": "Malaysian",
+      "languages": ["Malay", "English"]
+    },
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "offline_mode": true
+    },
+    "security": {
+      "mfa_enabled": true,
+      "last_login": "2026-01-30T10:00:00Z"
+    }
+  }
+}
