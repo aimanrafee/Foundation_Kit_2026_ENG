@@ -14,11 +14,14 @@ Core blueprints for web development.
 
 ### 📱 [02-Mobile-Environments](./02-Mobile-Environments)
 Mobile configuration and hardware access standards.
-* **Android Manifest**: Standard XML for app permissions and core identity.
+* **Android**: Standard XML for app permissions and core identity.
+* **Apple**: iOS/macOS permissions (Info.plist) and SwiftUI MVVM modular architecture.
+* **Legacy**: Architectural references for Symbian OS (.SIS) and unique identifiers.
 
 ### 🖥️ [03-Desktop-Systems](./03-Desktop-Systems)
-System automation and diagnostic scripts.
-* **Linux Basic Setup**: Bash script for environment initialization.
+System automation and diagnostic scripts for multiple OS.
+* **Linux-Distros**: Specialized initialization scripts for Ubuntu (APT) and Fedora (DNF).
+* **Windows**: PowerShell automation and WinUI application manifests for desktop stability.
 
 ### 📊 [04-Data-Structures](./04-Data-Structures)
 Universal data schemas for consistency.
@@ -36,8 +39,8 @@ To establish a high-discipline coding standard that remains stable, scalable, an
 | :--- | :--- |
 | **Markup** | HTML5 (W3C Living Standard) |
 | **Styling** | CSS3 (Modern Variables) |
-| **Logic** | Vanilla JavaScript (ES6+) |
-| **Data** | JSON (REST API Compatible) |
+| **Logic** | Vanilla JavaScript (ES6+), Swift (SwiftUI), PowerShell, Bash |
+| **Data** | JSON (REST API Compatible), XML (Plist/Manifest) |
 | **License** | MIT License |
 
 ---
@@ -52,8 +55,8 @@ Copy `01-Web-Standards/master-structure.html` as your base file. It is already p
 ### 2. Manage Data & State
 Use the `FoundationKit.storage.save('key', data)` function from `master-logic.js` to handle offline data persistence. Ensure your objects follow the structure defined in `04-Data-Structures/standard-user.json`.
 
-### 3. API Integration
-When connecting to a server, ensure the backend response aligns with `api-response-schema.json`. This allows the `FoundationKit.network.fetchData()` function to parse data safely.
+### 3. Cross-Platform Configuration
+When deploying to specific platforms, refer to the `02-Mobile` or `03-Desktop` directories for mandatory permissions (iOS/Android) or automation scripts (Linux/Windows).
 
 ---
 *Maintained by Foundation Kit - Building the Future, One Line at a Time.*
