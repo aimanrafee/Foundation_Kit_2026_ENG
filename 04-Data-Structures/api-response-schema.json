@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "Standard API Response Schema",
+    "description": "Master template for all server-to-client communications.",
+    "version": "1.0.0",
+    "last_updated": "2026-01-30"
+  },
+  "standard_response": {
+    "success": true,
+    "status_code": 200,
+    "message": "Data retrieved successfully",
+    "data": {
+      "items": [],
+      "total_count": 0,
+      "page_info": {
+        "current_page": 1,
+        "has_next": false
+      }
+    },
+    "error": {
+      "code": null,
+      "details": null
+    },
+    "timestamp": "2026-01-30T12:34:00Z"
+  }
+}
